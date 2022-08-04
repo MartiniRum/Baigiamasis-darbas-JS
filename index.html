@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Kdam+Thmor+Pro&family=Mouse+Memoirs&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Baigiamasis Darbas</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <a class="nav" href="#">Apie užduotį</a>
+      <a class="nav" href="#section-nr2">UŽDUOTIS NR1:</a>
+      <a class="nav" href="#section-nr3">UŽDUOTIS NR2:</a>
+      <a class="nav" href="#section-nr4">UŽDUOTIS NR3:</a>
+      <a class="nav" href="#section-nr5">UŽDUOTIS NR4:</a>
+      <a class="nav" href="#section-nr6">UŽDUOTIS NR5:</a>
+    </nav>
+    <img id="burger" src="bars-solid.svg">
+    <div class="container">
+      <section id="section-nr1">
+        <h2>UŽDUOTYS:</h2>
+        <hr />
+        <ol>
+          <li>
+            Paspaudus ant mygtuko, puslapyje esantis div atsiranda/pranyksta
+          </li>
+          <li>
+            Turit vieną div, su aukščiu,pločiu ir spalva bei 4 mygtukus, su
+            kuriais galit valdyt sukurto div savybes: plotis, aukstis,
+            centravimas ir pozicija
+          </li>
+          <li>
+            Burgeris ir šoninis Meniu - paspaudus ant burgerio gražiai
+            išvažiuoja šoninis meniu.
+          </li>
+          <li>
+            Bent 4 div elementai, pradžioje visi juodos spalvos, paspaudus bent
+            ant vieno iš jų, yra pakeičiamos spalvos visiems. Spalvos
+            generuojamos random.
+          </li>
+          <li>
+            Formoje pildoma "vardas", "pavardė" ir "gimimo data". Duomneys
+            kaupiami lentelėje. Stulpeliai: Eil. Nr., Vardas, Pavardė, Amžius.
+          </li>
+          <br />
+          <li class="no-decoration">
+            Visos užduotys turi būti stilizuotos, kad nebūtų sumaišytos.
+            Kiekviena turi turėti savo section, headingus ir pan.
+          </li>
+        </ol>
+      </section>
+      <section id="section-nr2">
+        <h2>UŽDUOTIS NR1:</h2>
+        <span class="button" onclick="disappearingDiv(0)">+-DIV</span>
+        <div class="disappear"></div>
+      </section>
+      <section id="section-nr3">
+        <h2>UŽDUOTIS NR2:</h2>
+        <div class="buttons">
+          <span class="button" onclick="disappearingDiv(1)">+-DIV</span>
+          <span class="button" onclick="height(1)">Aukštis</span>
+          <span class="button" onclick="width(1)">Plotis</span>
+          <span class="button" onclick="center(1)">Centravimas</span>
+          <span class="button" onclick="position(1)">Pozicija</span>
+        </div>
+        
+        <div class="disappear"></div>
+      </section>
+      <section id="section-nr4">
+        <h2>UŽDUOTIS NR3:</h2>
+        <p>Burger meniu dešiniajame viršutiniame kampe</p>
+      </section>
+      <section id="section-nr5">
+        <h2>UŽDUOTIS NR4:</h2>
+        <div class="displayFlex">
+          <div class="blackBox bb1"></div>
+          <div class="blackBox bb2"></div>
+          <div class="blackBox bb3"></div>
+          <div class="blackBox bb4"></div>
+        </div>
+      </section>
+      <section id="section-nr6">
+        <h2>UŽDUOTIS NR5:</h2>
+        <div class="inputContainer">
+          <input id="name" type="text" placeholder="Vardas">
+          <input id="lastName" type="text" placeholder="Pavardė">
+          <input id="age" type="text" placeholder="Gimimo metai">
+          <button id="submit">Pridėti</button>
+          <button id="empty">Išvalyti</button>
+        </div>
+        <table id="table"> 
+            <thead>
+              <tr>
+                <td>Eil.Nr.</td>
+                <td>Vardas</td>
+                <td>Pavardė</td>
+                <td>Amžius</td>
+              </tr>
+            </thead>
+              <tbody id="tbody">
+              </tbody>
+          </table>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

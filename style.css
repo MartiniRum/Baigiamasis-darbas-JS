@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 64px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    width: 80%;
+    background-color: bisque;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+h2 {
+    font-family: 'Fascinate', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.no-decoration {
+    list-style-type: disc;
+}
+.disappearing-div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.button{
+    color: aliceblue;
+    background-color:rgb(192, 1, 1);
+    padding: 5px;
+    border: solid black;
+    border-radius: 10px;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.width{
+    width: 300px;
+}
+.height{
+    height: 300px;
+}
+.center{
+    align-self: center;
+    justify-self: center;
+}
+.position{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+#burger{
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    width: 40px;
+    align-self: end;
+    justify-self: center;
+}
+.nav{
+    text-decoration: none;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ffea00ff 0%, #bb5100 66.67%, #fc0000 100%);
+    padding: 10px;
+    color:black;
+    border: 0 solid;
+    border-radius: 50px;
+}
+nav{
+    right: -110%;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 99;
+    margin:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.749);
+    padding: 10px;
+}
+.displayFlex{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.blackBox{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+input{
+    text-align: center;
+}
+#table{
+    display: none;
+    text-align: center;
+    min-width: 50%;
+    align-self: center;
+    margin-top: 20px;
+    padding: 2px;
+    background-color: rgba(62, 61, 61, 0.614);
+    border: 3px solid black;
+    border-radius: 2px;
+}
+thead{
+    width: 100%;
+    background-color: #bb5100;
+}
+td{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+p{
+    padding: 20px;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
