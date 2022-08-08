@@ -50,6 +50,9 @@ h2 {
     border: solid black;
     border-radius: 10px;
 }
+.button:hover{
+    cursor: pointer;
+}
 .buttons{
     width: 100%;
     display: flex;
@@ -79,6 +82,20 @@ h2 {
     right: 10px;
     position: fixed;
     width: 40px;
+    align-self: end;
+    justify-self: center;
+}
+#burger:hover{
+    cursor:cell;
+}
+#burgerX{
+    background-color: #ff03037d;
+    z-index: 99;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
     align-self: end;
     justify-self: center;
 }
@@ -115,6 +132,13 @@ nav{
     width: 150px;
     height: 150px;
     background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blackBox:hover{
+    cursor: pointer;
 }
 .inputContainer{
     width: 100%;
@@ -152,4 +176,7 @@ p{
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Mouse Memoirs', sans-serif;
     font-family: 'Poppins', sans-serif;
+}
+.transparent{
+    opacity: 0;
 }

@@ -24,6 +24,7 @@
       <a class="nav" href="#section-nr6">UŽDUOTIS NR5:</a>
     </nav>
     <img id="burger" src="bars-solid.svg">
+    <img id="burgerX" class="transparent" src="xmark-solid.svg">
     <div class="container">
       <section id="section-nr1">
         <h2>UŽDUOTYS:</h2>
@@ -57,19 +58,14 @@
           </li>
         </ol>
       </section>
-      <section id="section-nr2">
-        <h2>UŽDUOTIS NR1:</h2>
-        <span class="button" onclick="disappearingDiv(0)">+-DIV</span>
-        <div class="disappear"></div>
-      </section>
       <section id="section-nr3">
-        <h2>UŽDUOTIS NR2:</h2>
+        <h2>UŽDUOTIS NR1 - NR2:</h2>
         <div class="buttons">
-          <span class="button" onclick="disappearingDiv(1)">+-DIV</span>
-          <span class="button" onclick="height(1)">Aukštis</span>
-          <span class="button" onclick="width(1)">Plotis</span>
-          <span class="button" onclick="center(1)">Centravimas</span>
-          <span class="button" onclick="position(1)">Pozicija</span>
+          <span class="button" onclick="disappearingDiv(0)">+-DIV</span>
+          <span class="button" onclick="height(0)">Aukštis</span>
+          <span class="button" onclick="width(0)">Plotis</span>
+          <span class="button" onclick="center(0)">Centravimas</span>
+          <span class="button" onclick="position(0)">Pozicija</span>
         </div>
         
         <div class="disappear"></div>
@@ -79,20 +75,20 @@
         <p>Burger meniu dešiniajame viršutiniame kampe</p>
       </section>
       <section id="section-nr5">
-        <h2>UŽDUOTIS NR4:</h2>
+        <h2>UŽDUOTIS NR4: double click any box</h2>
         <div class="displayFlex">
-          <div class="blackBox bb1"></div>
-          <div class="blackBox bb2"></div>
-          <div class="blackBox bb3"></div>
-          <div class="blackBox bb4"></div>
+          <div class="blackBox bb1"><h3 class="colorCode"></h3></div>
+          <div class="blackBox bb2"><h3 class="colorCode"></h3></div>
+          <div class="blackBox bb3"><h3 class="colorCode"></h3></div>
+          <div class="blackBox bb4"><h3 class="colorCode"></h3></div>
         </div>
       </section>
       <section id="section-nr6">
         <h2>UŽDUOTIS NR5:</h2>
         <div class="inputContainer">
-          <input id="name" type="text" placeholder="Vardas">
-          <input id="lastName" type="text" placeholder="Pavardė">
-          <input id="age" type="text" placeholder="Gimimo metai">
+          <input id="name" type="text" maxlength="20" placeholder="Vardas">
+          <input id="lastName" type="text" maxlength="20" placeholder="Pavardė">
+          <input id="age" type="number"placeholder="Gimimo metai">
           <button id="submit">Pridėti</button>
           <button id="empty">Išvalyti</button>
         </div>
